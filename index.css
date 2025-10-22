@@ -31,6 +31,11 @@ a {
    text-decoration: none;
 }
 
+a:hover,
+a:focus, a:visited{
+   color: black;}
+
+
 svg {
    margin-right: 0.5rem;
 }
@@ -66,10 +71,7 @@ header {
    color: black;
 }
 
-a:hover,
-a:focus {
-   color: black;
-}
+
 
 /* Start-section */
 .start-section {
