@@ -142,5 +142,5 @@ addClickEvent(dogIconLink, dogs);
 addClickEvent(dogsNavLink, dogs);
 
 loadButton.addEventListener("click", () => {
-  displayAnimalsList(currentOpenAnima);
+  displayAnimalsList(currentOpenAnimal);
 });

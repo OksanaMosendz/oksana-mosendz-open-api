@@ -4,7 +4,6 @@
 }
 
 html {
-
    scroll-behavior: smooth;
 }
 
@@ -13,11 +12,6 @@ body {
    flex-direction: column;
    justify-content: space-between;
    min-height: 100vh;
-
-   @media (min-width: 768px) {
-      font-size: 1.5rem;
-
-   }
 }
 
 img {
@@ -47,7 +41,6 @@ svg {
    padding: 0 1rem;
 }
 
-
 header {
    width: 100%;
    border-bottom: 1px solid black;
@@ -67,17 +60,21 @@ header {
    border-radius: 5px;
 }
 
-.nav-item:hover, 
+.nav-item:hover,
 .nav-item:focus {
    box-shadow: 0 8px 16px rgba(0, 0, 0, 2);
+   color: black;
 }
 
+a:hover,
+a:focus {
+   color: black;
+}
 
 /* Start-section */
 .start-section {
    padding: 2rem 0;
    text-align: center;
-
 }
 
 .icons {
@@ -86,7 +83,6 @@ header {
    height: 100%;
    justify-content: center;
    align-items: center;
-
 }
 
 .icons a {
@@ -95,8 +91,7 @@ header {
 }
 
 .icons a:hover,
-.icons a:focus
- {
+.icons a:focus {
    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
    border-radius: 5%;
 }
@@ -110,7 +105,7 @@ header {
    margin: 0 2rem 0 2rem;
    font-size: 3rem;
 
-   @media (min-width:768px) {
+   @media (min-width: 768px) {
       font-size: 6rem;
       font-weight: bold;
    }
@@ -127,25 +122,21 @@ header {
 .animals-section {
    text-align: center;
    padding: 1rem 1rem;
-   ;
    display: none;
 }
 
 .animals-list {
-
    display: grid;
    gap: 1rem;
 
    grid-template-columns: 1fr;
    grid-auto-rows: 400px;
 
-   @media (min-width:768px) {
+   @media (min-width: 768px) {
       grid-template-columns: 1fr 1fr;
    }
 
-   ;
-
-   @media (min-width:1024px) {
+   @media (min-width: 1024px) {
       grid-template-columns: 1fr 1fr 1fr;
    }
 }
@@ -158,7 +149,7 @@ header {
 }
 
 .animal-item:hover,
-.animal-item:focus{
+.animal-item:focus {
    box-shadow: 0 8px 16px rgba(0, 0, 0, 2);
 }
 
@@ -169,12 +160,11 @@ header {
    height: 100%;
 }
 
-.animal-img__wrap>img {
+.animal-img__wrap > img {
    height: 100%;
    max-width: 100%;
    object-fit: cover;
 }
-
 
 /* Buttons */
 
@@ -184,7 +174,6 @@ header {
    justify-content: space-between;
    margin-top: 1rem;
 }
-
 
 .load-button {
    padding: 1rem;
@@ -213,7 +202,6 @@ header {
    border: 1px solid black;
 }
 
-
 /* Current opened animal */
 
 .current-animal {
@@ -228,16 +216,26 @@ header {
    justify-content: center;
    align-items: center;
    cursor: pointer;
-
 }
 
 .animal-info {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
    max-width: 80%;
    height: auto;
    max-height: 70%;
-   box-shadow: rgba(0, 0, 0, 0.726) 0px 5px 15px;
    margin-top: auto;
    margin-bottom: auto;
+
+   @media (min-width: 1024px) {
+      aspect-ratio: 2.5/3;
+   }
+
+   @media (min-width: 1280px) {
+      aspect-ratio: 4/4;
+   }
 }
 
 .current-img {
@@ -245,21 +243,20 @@ header {
    max-height: 100%;
    width: 100%;
    object-fit: cover;
-
-   @media (min-width:1024px) {
-      max-height: 80%;
-   }
 }
 
 .breed-info {
+   display: block;
    border-top: 1px black solid;
    padding: 1rem;
    background-color: white;
    max-height: 100%;
+   max-width: 100%;
    text-align: start;
 }
 
 .breed-name {
+   display: block;
    margin-bottom: 1rem;
 }
 
@@ -272,7 +269,6 @@ header {
 footer {
    border-top: 1px solid black;
    width: 100%;
-   ;
 }
 
 .footer-info {
